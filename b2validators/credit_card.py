@@ -77,6 +77,6 @@ def validate_expiration_date(value):
     current_month = datetime.datetime.now().month
     validate_expiration_date_month(month)
     validate_expiration_date_year(year, current_year)
-    if int(year) < current_year and current_month < int(month):
+    if int(year) == current_year and current_month > int(month):
         raise ValidationError("Data de expiração inválida.")
     return value
