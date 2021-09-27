@@ -1,4 +1,4 @@
-from validators.exceptions import ValidationError
+from b2validators.exceptions import ValidationError
 import re
 import datetime
 

@@ -19,14 +19,14 @@ if sys.argv[-1] == 'publish':
 
 settings.update(
     name='validators-b2bit',
-    version='2021.9.24',
+    version='2021.9.29',
     description='General Validators',
     author='Matheus Andrade',
     author_email='matheus.andrade1996@gmail.com',
     url='https://github.com/math-s/API-3.0-Python',
     keywords='python sdk ecommerce validators',
     packages=find_packages(),
-    install_requires=['requests', 'future'],
+    install_requires=['requests', 'future', 'Django', 'djangorestframework'],
     license='MIT',
     classifiers=(
         'Intended Audience :: Developers',
@@ -42,4 +42,3 @@ settings.update(
 
 
 setup(**settings)
-
